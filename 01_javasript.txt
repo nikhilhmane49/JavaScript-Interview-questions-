@@ -1,6 +1,6 @@
 
 
-//******Just-In-Time (JIT) compiler**********
+//1Q)***************Just-In-Time (JIT) compiler**********
 
 JavaScript does have a Just-In-Time (JIT) compiler. Modern JavaScript engines, like Google's V8 (used in Chrome and Node.js) and Mozilla's SpiderMonkey (used in Firefox), use JIT compilation to improve the performance of JavaScript execution.
 
@@ -27,3 +27,21 @@ Performance: By converting frequently executed code into machine code at runtime
 Adaptability: The JIT compiler can optimize based on actual runtime conditions, making it more efficient for certain patterns that were not predictable at the start.
 
 Fast Startup Time: Because JIT compilation is done on-demand, the initial load time of JavaScript code is fast (due to interpretation), and performance improves as the program runs and optimizes.
+
+
+
+//2Q)***************What is npm and npx************
+
+
+****npm (Node Package Manager)
+
+---->npm is the default package manager for Node.js, allowing developers to install, manage, and share JavaScript libraries
+    and dependencies for their projects. It is an essential tool for Node.js development and is bundled with Node.js installations.
+
+****npx (Node Package Execute)
+
+--->npx is a tool that comes with npm (version 5.2.0 and above) and is designed to execute npm packages without needing to install them 
+    globally or locally. It simplifies the execution of packages and one-time scripts.
+
+
+
