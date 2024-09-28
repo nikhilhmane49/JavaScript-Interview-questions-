@@ -22,6 +22,20 @@ Express.js server needs to know what type of data you're sending over the networ
 
 
 
+//3Q**********************fetch
 
+1___The fetch() method is a built-in JavaScript function used to make network requests, typically to retrieve data from a server
+
+
+2___The fetch() method must take at least one argument, which is the URL (or path) of the resource you want to fetch (e.g., a JSON file, 
+    API data, etc.). This could be an absolute or relative path to a resource hosted on a web server.
+
+
+3____
+1)__fetch() returns a Promise. A promise in JavaScript represents an operation that will either complete successfully in the future 
+     (resolve) or fail (reject).
+2)__When the fetch() method is called, it doesn’t wait for the entire server response (including the data) to be ready. Instead, it 
+    returns a Promise that resolves as soon as the server responds with headers.
+3)___This means that the promise resolves to a Response object, even if the server returns an error (e.g., HTTP 404 or 500).
 
 
