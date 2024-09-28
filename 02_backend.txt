@@ -22,7 +22,7 @@ Express.js server needs to know what type of data you're sending over the networ
 
 
 
-//3Q**********************fetch
+//3Q*************************fetch
 
 1___The fetch() method is a built-in JavaScript function used to make network requests, typically to retrieve data from a server
 
@@ -37,5 +37,26 @@ Express.js server needs to know what type of data you're sending over the networ
 2)__When the fetch() method is called, it doesn’t wait for the entire server response (including the data) to be ready. Instead, it 
     returns a Promise that resolves as soon as the server responds with headers.
 3)___This means that the promise resolves to a Response object, even if the server returns an error (e.g., HTTP 404 or 500).
+
+
+In short meaning of 3rd point---->
+
+
+In simple terms, when you use the fetch() function to make a request to a server, it will always give you a response, even if something goes wrong (like the server not finding the page or having an internal error).
+
+For example:
+
+If the server can't find what you're asking for (like a 404 Not Found error), fetch() will still give you a response.
+If there's a server problem (like a 500 Internal Server Error), fetch() still gives you a response.
+However, this response doesn't automatically tell you if everything went well. You have to check the response to see if it was successful or if there was an error.
+
+In short: fetch() doesn't "fail" right away if there's an error; it gives you a response, and it's your job to check if that response is good or not.
+
+
+
+
+
+
+
 
 
