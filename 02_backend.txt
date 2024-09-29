@@ -55,6 +55,26 @@ In short: fetch() doesn't "fail" right away if there's an error; it gives you a 
 
 
 
+//4Q)***************************What is Axios?
+Axios is a popular JavaScript library used for making network requests to interact with APIs. It simplifies the process of sending requests to a server and handling responses. It is widely used in modern JavaScript applications (both in the browser and in Node.js) to perform operations like:
+
+Fetching data from an API (e.g., GET requests).
+Sending data to a server (e.g., POST requests).
+Updating or deleting resources on a server (e.g., PUT and DELETE requests).
+Handling response statuses and error handling more easily compared to the built-in fetch() method.
+
+expmale:----->
+
+const axios = require('axios');
+
+// Making a GET request
+axios.get('https://api.example.com/data')
+  .then(response => {
+    console.log(response.data);  // Log the data received from the API
+  })
+  .catch(error => {
+    console.error('Error fetching data:', error);  // Handle errors
+  });
 
 
 
